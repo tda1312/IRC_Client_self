@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:xm1ns="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:background="@drawable/guitar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        xm1ns:headerLayout="@layout/header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        xm1ns:itemTextColor="@color/darkgray"
+        xm1ns:itemIconTint="@color/darkgray"
+        xm1ns:menu="@menu/drawer_menu"
+        android:layout_gravity="start">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
